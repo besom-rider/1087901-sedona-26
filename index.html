@@ -2,11 +2,79 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
+    
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header>
+      <nav>
+          <a href="index.html" title="На главную">
+              <img src="img/logo.png" alt="Логотип">
+          </a>
+        <ul>
+          <li><a href="info.html"> Информация</a></li>
+          <li><a href="gallery.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>          
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Добро пожаловать!</h1>
+      <section class="greeting">
+        <p>
+          <span>Welcome</span>
+          <span>to the gorgeous</span>
+          <span>Sedona</span>
+          <span>"Because the Grand Canyon sucks!"</span>
+        </p>
+
+      <!--Корявая фигура для перекрытия фона  
+        <svg>
+
+        </svg>
+      -->
+
+        <b>Седона - небольшой городок в Аризоне,<br>
+           заслуживающий большего!</b>
+      </section>
+      <article class="advantages">
+        <h2 class="visually-hidden">Преимущества города</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+       <!-- Здесь должны быть преимущества, но их сказали пока не делать-->
+
+      </article>
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p>
+          <b>Заинтересовались?</b><br>
+          <span>Укажите предполагаемые даты поездки, <br>
+              и мы покажем вам лучшие предложения гостиниц в седоне
+          </span>
+        </p>
+
+       <!-- Форма поиска гостиницы-->
+
+      </section>
+    </main>
+
+    <footer>
+      <b>#visitsedona</b>
+      <div class="footer-social">
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p>
+          <b>Website by</b>
+          <a href="https://htmlacademy.ru/"><img src="htmlacademy-logo.png" alt="Логотип академии"></a>
+      </p>
+    </footer>
 
   </body>
 </html>
