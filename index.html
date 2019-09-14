@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header>
-      <nav>
-          <a href="index.html" title="На главную">
-              <img src="img/logo.png" alt="Логотип">
-          </a>
+      <nav>         
+        <img src="img/logo.png" alt="Логотип">
         <ul>
           <li><a href="info.html"> Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
@@ -21,29 +20,80 @@
       </nav>
     </header>
 
+
     <main>
-      <h1 class="visually-hidden">Добро пожаловать!</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+
       <section class="greeting">
         <div class="welcome">  
           <img src="img/welcome.png" alt="Welcome to the gorgeous Sedona!">
         </div> 
-
-      <!--Корявая фигура для перекрытия фона  
-        <svg>
-
-        </svg>
-      -->
-
+        <!--корявая белая фигура на фоне-->
+        
         <b>Седона - небольшой городок в Аризоне,<br>
            заслуживающий большего!</b>
       </section>
+
       <article class="advantages">
         <h2 class="visually-hidden">Преимущества города</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-
-       <!-- Здесь должны быть преимущества, но их сказали пока не делать-->
-
+        <ul>
+         <li>           
+          <h3>Настоящий городок</h3>  
+          <p>            
+            <span> — №1 —</span>
+            <span>Седона — не аттракцион для туристов, там течёт своя жизнь</span>                        
+          </p>
+          <img src="img/advantages1.jpg" height="400" width="800" alt="Фото здания в городе">
+          <ul>
+            <li>
+              <img src="img/house.svg" width="75" height="75" alt="домик">
+              <b>Жильё</b>  
+              <span>Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+            </li>
+            <li>
+              <img src="img/food.svg" width="75" height="75" alt="бургер">
+              <b>Еда</b>  
+              <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+            </li>
+            <li>
+              <img src="img/souvenirs.svg" width="75" height="75" alt="сувенир">
+              <b>Сувениры</b>  
+              <span>Не только китайского, но и местного производства!</span>
+            </li>            
+          </ul>
+         </li>
+         <li>
+           <h3>Там есть Мост дьявола</h3>  
+            <p>            
+              <span> — №2 —</span>
+              <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>                        
+            </p>
+            <img src="img/advantages2.jpg" height="400" width="800" alt="Фото здания в городе"></li>
+         <li>
+            <h3>Небольшая площадь</h3>  
+            <p>            
+              <span> — №3 —</span>
+              <span>Все достопримечательности находятся очень близко</span>                        
+            </p>
+         </li>
+         <li>
+            <h3>Красивая дорога</h3>  
+            <p>            
+              <span> — №4 —</span>
+              <span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>                        
+            </p>
+         </li>
+         <li>
+            <h3>Мало туристов</h3>  
+            <p>            
+              <span> — №5 —</span>
+              <span>Большинство едет в гранд каньон и толпится там</span>                        
+            </p>
+         </li>
+       </ul>
       </article>
+
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p>
@@ -52,9 +102,34 @@
               и мы покажем вам лучшие предложения гостиниц в седоне
           </span>
         </p>
+        <img src="img/map.png" width="1500" height="748" alt="Карта местоположения Седоны">
 
-       <!-- Форма поиска гостиницы-->
-
+        <section class="popup">
+            <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
+            <form action="#" method="GET">
+              <div class="arrival">
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="date" name="arrival-date" id="arrival-date">
+            </div>
+            <div class="departure">
+              <label for="departure-date">Дата выезда:</label>
+              <input type="date" name="departure-date" id="departure-date">
+            </div>
+            <div class="adult">
+              <label for="adults">Взрослые:</label>
+              <input type="number" name="adults" id="adults" min="1">
+            </div>
+            <div class="children">
+                <label for="child">Дети:</label>
+                <input type="number" name="child" id="child" min="0">
+            </div>
+            <div class="button">
+              <input type="submit" value="Найти">
+            </div>
+      
+            </form>
+      
+          </section>
       </section>
     </main>
 
@@ -62,16 +137,30 @@
       <b>#visitsedona</b>
       <div class="footer-social">
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li>
+            <a href="#">
+              <img src="img/twitter.svg" width="48" height="48" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/fb.svg" width="48" height="48" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <img src="img/youtube.svg" width="48" height="48" alt="YouTube">
+            </a>
+          </li>
         </ul>
       </div>
       <p>
           <b>Website by</b>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="htmlacademy-logo.png" alt="Логотип академии"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" alt="Логотип академии"></a>
       </p>
     </footer>
+
+    
 
   </body>
 </html>
